@@ -20,7 +20,7 @@ func imprimir(canal chan string) {
 	for {
 		msg := <-canal // operador de canal "<-" para receber um valor do canal e armazená-lo na variável "msg"
 		fmt.Println(msg)
-		time.Sleep(time.Second * 1) // pausa de 1 segundo para evitar que a saída seja muito rápida
+		time.Sleep(time.Second * 5) // pausa de 1 segundo para evitar que a saída seja muito rápida
 	}
 }
 func main() {
